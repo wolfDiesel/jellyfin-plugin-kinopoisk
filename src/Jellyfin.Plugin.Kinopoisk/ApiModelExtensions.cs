@@ -274,7 +274,7 @@ namespace Jellyfin.Plugin.Kinopoisk
                 StaffResponseProfessionKey.WRITER => PersonKind.Writer,
                 StaffResponseProfessionKey.COMPOSER => PersonKind.Composer,
                 StaffResponseProfessionKey.PRODUCER or StaffResponseProfessionKey.PRODUCER_USSR => PersonKind.Producer,
-               // _ => PersonKind,
+                _ => PersonKind.Unknown,
             };
         }
 
