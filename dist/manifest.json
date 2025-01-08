@@ -9,6 +9,15 @@
     "imageUrl": "https://kinopoisk.userecho.com/s/attachments/28876/0/1/25f8c0315e6ccb2aa6c2642e48f2c9e9.png",
     "versions": [
       {
+        "version": "10.9.2.0",
+        "checksum": "864f264d50dad8bac012c62165516f8d",
+        "changelog": "new release",
+        "name": "КиноПоиск",
+        "targetAbi": "10.9.2",
+        "sourceUrl": "https://raw.githubusercontent.com/wolfDiesel/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.9.2.0.zip",
+        "timestamp": "2025-01-08T15:40:11Z"
+      },
+      {
         "version": "10.9.1.0",
         "checksum": "ed63c591f19d4e136d80c573af8e3f07",
         "changelog": "new release",

@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="10.9.1.0"
+VERSION="10.9.2.0"
 CHANGELOG="Fix bugs"
 
 check_command() {
@@ -52,7 +52,7 @@ HASH=$(md5sum "$RELEASEDIR.zip" | cut -d' ' -f1)
 jq --arg HASH "$HASH" --arg URL "https://raw.githubusercontent.com/wolfDiesel/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_$VERSION.zip" \
     --arg TIMESTAMP "$(date -u "+%Y-%m-%dT%H:%M:%SZ")" \
     --arg VERSION "$VERSION" \
-    '.[0].versions |= [{"version": $VERSION, "checksum": $HASH, "changelog": "new release", "name": "\u041a\u0438\u043d\u043e\u041f\u043e\u0438\u0441\u043a", "targetAbi": "10.9.1", "sourceUrl": $URL, "timestamp": $TIMESTAMP}] + .' \
+    '.[0].versions |= [{"version": $VERSION, "checksum": $HASH, "changelog": "new release", "name": "\u041a\u0438\u043d\u043e\u041f\u043e\u0438\u0441\u043a", "targetAbi": "10.9.2", "sourceUrl": $URL, "timestamp": $TIMESTAMP}] + .' \
     "$(pwd)/dist/manifest.json" > "$(pwd)/dist/manifest.json.tmp" && \
     mv "$(pwd)/dist/manifest.json.tmp" "$(pwd)/dist/manifest.json"
 exit
